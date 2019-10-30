@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android= "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_schoolName"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:hint="@string/school_name_secondPage"/>
+
+        <EditText
+            android:id="@+id/et_booths"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_schoolName"
+            android:hint="# of Booths"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_booths"
+            android:hint="Date"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="4dp"
+            android:background="#ffcce6"
+            android:layout_below="@id/et_date"
+            android:layout_marginTop="30dp"/>
+
+
+        <CheckBox
+            android:id="@+id/cb_roses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20sp"
+            android:text="@string/dozen_roses"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_spring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_roses"
+            android:layout_alignLeft="@+id/cb_roses"
+            android:layout_centerInParent="true"
+            android:text="@string/spring_mix"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_doubleLei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_spring"
+            android:layout_alignLeft="@+id/cb_roses"
+            android:layout_centerInParent="true"
+            android:text="@string/double_leis"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_singleLei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_doubleLei"
+            android:layout_alignLeft="@+id/cb_roses"
+            android:layout_centerInParent="true"
+            android:text="@string/single_leis"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_premKuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_singleLei"
+            android:layout_alignLeft="@+id/cb_roses"
+            android:layout_centerInParent="true"
+            android:text="@string/premium_kukui"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb_branKuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_premKuk"
+            android:layout_alignLeft="@+id/cb_roses"
+            android:layout_centerInParent="true"
+            android:text="@string/branded_kukui"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lineTwo"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="4dp"
+            android:background="#ffcce6"
+            android:layout_below="@id/cb_branKuk"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_round"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lineTwo"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/flowerboarder"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/verticalboarder" />
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/flowerboarder"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/verticalboarder"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainerTop"
+        android:layout_above="@+id/fragmentContainerBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainerBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

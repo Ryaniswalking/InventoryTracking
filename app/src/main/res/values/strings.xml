@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">InventoryTracking</string>
+    <string name="start">Start</string>
+    <string name="inventory_tracking">Flower Tracker</string>
+    <string name="title_activity_second_page">SecondPage</string>
+    <string name="of_booths"># Of Booths:</string>
+    <string name="date">Date:</string>
+    <string name="school_name">School Name:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_to_database">Save To Database</string>
+    <string name="school_name_secondPage">School Name</string>
+    <string name="dozen_roses">Dozen Roses</string>
+    <string name="spring_mix">Spring Mix</string>
+    <string name="double_leis">Double Leis</string>
+    <string name="single_leis">Single Leis</string>
+    <string name="premium_kukui">Premium Kukui</string>
+    <string name="branded_kukui">Branded Kukui</string>
+    <string name="submit">Submit</string>
+    <string name="click_for_explanation">Click for explanation</string>
+</resources>
